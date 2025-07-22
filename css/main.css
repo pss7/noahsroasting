@@ -90,3 +90,21 @@
 .vacationBox .vacationLength{display: flex; gap: 0 4px; align-items: center;}
 .vacationBox .vacationLength li{width: 52px; font-size: 16px; font-weight: 500; color: #231D17; text-align: center;}
 .vacationBox .vacationLength li strong{font-weight: 500; color: #1D8BE7;}
+
+/* 출근하기 모달 */
+.workModalWrap{display: none; position: fixed; top:0; left:0; right:0; bottom: 0;background-color: #F7F7F7; z-index: 999; overflow-y: auto;}
+.workModalWrap .workModalBox{height: 100%; display: flex; flex-direction: column; padding: 70px 18px 24px;}
+.workModalWrap .workModalBox .box{flex: 1;}
+.workModalWrap h1{position: absolute; top:0; left:0; width: 100%; display: flex; align-items: center; justify-content: center; height: 50px; text-align: center; font-size: 16px; color: #231D17; font-weight: 600; background-color: #fff;}
+.workModalWrap .mapBox{margin-bottom: 16px; border: 1px solid #E9E9E9; border-radius: 6px; overflow: hidden;}
+.workModalWrap .mapBox .map{height: 210px; }
+.workModalWrap .mapBox img{display: block; width: 100%; height: 100%; object-fit: cover;} 
+.workModalWrap .mapBox p{display: flex; align-items: center; padding: 0 24px; height: 56px; font-size: 14px; color: #9E9E9E; background-color: #fff;}
+.workModalWrap .infoBox{padding: 0 18px 18px; background-color: #fff; border: 1px solid #E9E9E9; border-radius: 6px; overflow: hidden;}
+.workModalWrap .infoBox h2{padding: 21px 0; font-size: 16px; color: #000; font-weight: 500;}
+.workModalWrap .infoBox .infoList li a{position: relative; padding: 15px 22px 15px 0; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E9E9E9;}
+.workModalWrap .infoBox .infoList li a::after{width: 7px; height: 14px; content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:0; background: url(../images/main/arrow_icon02.svg)no-repeat center;}
+.workModalWrap .infoBox .infoList li:last-child a{border-bottom: 0;}
+.workModalWrap .infoBox .infoList li a span{color: #231D17; font-size: 16px; font-weight: 500;}
+.workModalWrap .btn{width: 100%; margin-top: auto;}
+.workModalWrap .closeBtn{width: 16px; height: 16px; position: absolute; top:16px; left:18px; background: url(../images/main/close_btn.svg)no-repeat center;}

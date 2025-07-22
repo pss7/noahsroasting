@@ -1,12 +1,17 @@
 $(function () {
 
-  /* 헤더 , aos */
-  $(window).on('load', function () {
-    $('#headerWrap').addClass('active');
-    AOS.init({
-      once: false,
-      duration: 1800
-    });
+  $('.work').click(function () {
+    $('.workModalWrap').fadeIn();
+  });
+  $('.workModalWrap .closeBtn').click(function () {
+    $('.workModalWrap').fadeOut();
+  });
+
+  $('.request').click(function () {
+    $('.settingModalWrap').fadeIn();
+  });
+  $('.settingModalWrap .closeBtn').click(function () {
+    $('.settingModalWrap').fadeOut();
   });
 
 });
