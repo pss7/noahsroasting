@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#mainWrap {flex: 1; background-color: #fff;}
+#mainWrap.bg{background-color: #F7F7F7;}
+
+/* 메인 */
+.mainBox{padding:20px 0 102px;}
+.mainBox .box{margin-bottom: 16px; padding: 0 18px 16px; background-color: #fff; border-radius: 6px; border: 1px solid #E9E9E9;}
+.mainBox .box h2{ padding: 12px 0; font-size: 16px; font-weight: 500; color: #000;}
+.mainBox .box h2.border-bottom{border-bottom: 1px solid #E9E9E9;}
+.mainBox .box .comList{padding: 6px 0 0;}
+.mainBox .box .comList li a{ padding: 7px 100px 7px 0; position: relative; display: block;}
+.mainBox .box .comList li a::after{content: ''; width: 7px; height: 14px; position: absolute; top: 50%; transform: translateY(-50%); right:0; background: url(../images/main/arrow_icon01.svg)no-repeat center;}
+.mainBox .box .comList li a p{overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; color: #231D17;}
+.mainBox .box .comList li a .date{position: absolute; top: 50%; transform: translateY(-50%); right:17px; font-size: 13px; color: #9E9E9E;}
+.mainBox .box .workingBox{margin-bottom: 14px; position: relative; padding-left: 14px; display: flex; flex-direction: column; justify-content: center; gap: 4px 0;}
+.mainBox .box .workingBox::before{content: ''; position: absolute; left:0; top: 50%; transform: translateY(-50%); width: 2px; height: 100%; border-radius: 50px; background-color: #626262;}
+.mainBox .box .workingBox .date{color: #241E17; font-size: 14px; font-weight: 700;}
+.mainBox .box .workingBox .plan{display: flex; align-items: center; gap: 0 4px; font-size: 14px; color: #757575;}
+.mainBox .box .workingBox .plan .planAlarm{padding: 3px 4px; background-color: #F7F7F7; font-size: 10px; color: #757575; font-weight: 500; border-radius: 4px;}
+.mainBox .box .btnBox{display: flex; gap: 0 10px;}
+.mainBox .box .btnBox .btnType01{flex-shrink: 0; width: 27%;}
+.mainBox .box .btnBox .btnType02{width: 73%;}
+
+/* 메일 */
+.mailWrap{padding:0 0 70px;}
+.mailWrap .top{padding: 0 18px; display: flex; align-items: center; justify-content: space-between; height: 52px; border-bottom: 1px solid #E9E9E9;}
+.mailWrap .top .linkList{display: flex; align-items: center; gap: 0 18px;}
+.mailWrap .top .linkList li a{display: block;}
+.mailWrap .top .linkList li a.mark{width: 20px; height: 19px; background: url(../images/mail/mark_icon.svg)no-repeat center;}
+.mailWrap .top .linkList li a.move{width: 22px; height: 18px; background: url(../images/mail/move_icon.svg)no-repeat center;}
+.mailWrap .top .linkList li a.del{width: 18px; height: 20px; background: url(../images/mail/del_icon.svg)no-repeat center;}
+.mailWrap .top .linkList li a.spam{width: 20px; height: 20px; background: url(../images/mail/spam_icon.svg)no-repeat center;}
+.mailWrap .top .refresh{width: 20px; height: 18px; background: url(../images/mail/refresh_icon.svg)no-repeat center;}
+.mailWrap .mailLlist li{position: relative; display: flex; padding: 6px 16px; border-bottom: 1px solid #E9E9E9;}
+.mailWrap .mailLlist li:last-child{border-bottom: 0;}
+.mailWrap .mailLlist li .inputCheckBox{flex-shrink: 0; padding-top:2px; margin-right: 12px;}
+.mailWrap .mailLlist li .inputCheckBox label{display: block; width: 18px; height: 18px; border:1px solid #C7C7C7; border-radius: 3px;}
+.mailWrap .mailLlist li .inputCheckBox input:checked + label{background: url(../images/mail/chk.svg)no-repeat center; border: 0;}
+
+.mailWrap .mailLlist li .inputMarkBox{margin: 0; padding: 0;}
+.mailWrap .mailLlist li .inputMarkBox label{display: block; width: 18px; height: 18px; background: url(../images/mail/favorite_icon.svg)no-repeat center; border: 0;}
+.mailWrap .mailLlist li .inputMarkBox input:checked + label{background: url(../images/mail/favorite_active.svg)no-repeat center;}
+.mailWrap .mailLlist li .textBox{display: flex; flex-direction: column; overflow: hidden;}
+.mailWrap .mailLlist li .textBox .box{position: relative;}
+.mailWrap .mailLlist li .textBox .box .inputMarkBox{position: absolute; top:0; right:0;}
+.mailWrap .mailLlist li .textBox h2{padding-right: 66px; position: relative; color: #231D17; font-weight: 500; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.mailWrap .mailLlist li .textBox p{padding-right: 25px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 14px; font-weight: 300; color: #757575;}
+.mailWrap .mailLlist li .time{position: absolute; top:2px; right:0; font-size: 13px; color: #757575;}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+#wrap{display: flex; flex-direction: column; height: 100%;}
+
+/* 공통 - 버튼 */
+.btn{padding: 17px 10px; border-radius: 6px; text-align: center; font-weight: 600; font-size: 16px;}
+.btn.btnType01{border: 1px solid #C7C7C7; color: #231D17;}
+.btn.btnType02{background-color: #63D3F5; color: #fff;}
+
+/* 가운데영역 */
+.container{padding: 0 18px;}
+
+/* 헤더 */
+#headerWrap{ background-color: #1D8BE7;}
+#headerWrap .headerBox{display: flex; align-items: center; justify-content: space-between;}
+#headerWrap .menuBtn{display: block; width: 19px; height: 14px; background: url(../images/common/menu_icon.svg)no-repeat center;}
+#headerWrap .logoBox h1 a{padding: 12px 0;}
+#headerWrap .logoBox h1 a,
+#headerWrap .logoBox h1 a img{display: block;}
+#headerWrap .alarmBox{position: relative;}
+#headerWrap .alarmBox img{display: block;}
+#headerWrap .alarmBox .alarmNumber{position: absolute; right:-2px; top:-3px; width: 12px; height: 12px; line-height: 12px; border-radius: 50%; text-align: center; background-color: #E54F40; color: #fff; font-size: 8px; font-weight: 800;}
+
+/* 푸터 */
+#footerWrap{padding: 10px 0; position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; z-index: 100; border-top: 1px solid #F2F2F2;}
+#footerWrap .footerLinkList{ height: 49px; display: flex; align-items: center; justify-content: center;}
+#footerWrap .footerLinkList li{flex: 1; height: 100%;}
+#footerWrap .footerLinkList li a{display: block; height: 100%; padding-top: 33px; position: relative;}
+#footerWrap .footerLinkList li a::before{content: ''; position: absolute; top:0; left:50%; transform: translateX(-50%); }
+#footerWrap .footerLinkList li a.home::before{top: 6px; width: 19px; height: 19px; background: url(../images/common/icon01.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.home.active::before{top: 6px; width: 19px; height: 19px; background: url(../images/common/home_active.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.email::before{top: 8px; width: 21px; height: 16px; background: url(../images/common/icon02.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.email.active::before{top: 8px; width: 21px; height: 16px; background: url(../images/common/mail_active.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.payment::before{top: 8px; width: 22px; height: 16px; background: url(../images/common/icon03.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.commute::before{top: 5px; width: 19px; height: 20px; background: url(../images/common/icon04.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.vacation::before{top: 8px; width: 21px; height: 19px; background: url(../images/common/icon05.svg)no-repeat center;}
+#footerWrap .footerLinkList li a img{display: block; margin: 0 auto 9px;}
+#footerWrap .footerLinkList li a span{display: block; text-align: center; font-size: 10px; color: #757575;} 
