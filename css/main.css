@@ -75,14 +75,9 @@
 .commuteWrap .commuteBox .infoList li .timeBox img{display: block; margin: 0 auto;}
 .commuteWrap .commuteBox .infoList li .textBox{position: relative; padding: 4px 12px;}
 .commuteWrap .commuteBox .infoList li .textBox::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 2px; border-radius: 50px;}
-
 .commuteWrap .commuteBox .infoList li .textBox.border-blue::before{background-color: #107DF2;}
 .commuteWrap .commuteBox .infoList li .textBox.border-green::before{background-color: #1DD9BA;}
 .commuteWrap .commuteBox .infoList li .textBox.border-purple::before{background-color: #7610F2;}
 .commuteWrap .commuteBox .infoList li .textBox.border-brown::before{background-color: #BB6A1E;}
-
-
-
-
 .commuteWrap .commuteBox .infoList li .textBox .name{display: block; color: #231D17; font-size: 16px; font-weight: 500;}
 .commuteWrap .commuteBox .infoList li .textBox .info{display: block; font-size: 14px; font-weight: 300; color: #757575;}
