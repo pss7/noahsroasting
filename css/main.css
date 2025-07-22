@@ -36,7 +36,6 @@
 .mailWrap .mailLlist li .inputCheckBox{flex-shrink: 0; padding-top:2px; margin-right: 12px;}
 .mailWrap .mailLlist li .inputCheckBox label{display: block; width: 18px; height: 18px; border:1px solid #C7C7C7; border-radius: 3px;}
 .mailWrap .mailLlist li .inputCheckBox input:checked + label{background: url(../images/mail/chk.svg)no-repeat center; border: 0;}
-
 .mailWrap .mailLlist li .inputMarkBox{margin: 0; padding: 0;}
 .mailWrap .mailLlist li .inputMarkBox label{display: block; width: 18px; height: 18px; background: url(../images/mail/favorite_icon.svg)no-repeat center; border: 0;}
 .mailWrap .mailLlist li .inputMarkBox input:checked + label{background: url(../images/mail/favorite_active.svg)no-repeat center;}
@@ -58,3 +57,32 @@
 .approvalWrap .approvalList li .state.approve{background-color: #D9EEFF; color: #107DF2;}
 .approvalWrap .approvalList li .state.companion{background-color: #FFD9DA; color: #F21014;}
 .approvalWrap .approvalList li .date{position: absolute; top:15px; right:16px; font-size: 13px; color: #757575;}
+
+/* 출퇴근 */
+.commuteWrap .dateBox{ display: flex; align-items: center; height: 46px; border-bottom: 1px solid #E9E9E9; padding: 0 20px;}
+.commuteWrap .box{max-width: 118px; width: 100%;position: relative; display: flex; align-items: center;}
+.commuteWrap .dateBox img{margin-right: 6px;}
+.commuteWrap .dateBox .line{margin: 0 2px; color: #757575;}
+.commuteWrap .dateBox .date{width: 100%; color: #757575; font-size: 14px; font-weight: 500; border: 0;}
+/* .commuteWrap .dateBox .arrowIcon{position: absolute; top:50%; transform: translateY(-50%); right:0; width: 14px; height: 9px; background: url(../images/commute/arrow_icon.svg)no-repeat center;}
+.commuteWrap .dateBox .date.active + .arrowIcon{transform:  translateY(-50%) rotate(-180deg);} */
+.commuteWrap .commuteBox .topDateBox{padding: 11px 18px; display: flex; align-content: center; justify-content: space-between; background-color: #F7F7F7;}
+.commuteWrap .commuteBox .topDateBox span{font-weight: 500; font-size: 14px; color: #626262;}
+.commuteWrap .commuteBox .infoList li{padding: 14px 10px 14px 0; display: flex; align-items: center; border-bottom: 1px solid #E9E9E9;}
+.commuteWrap .commuteBox .infoList li .timeBox{flex-shrink: 0; width: 85px; text-align: center;}
+.commuteWrap .commuteBox .infoList li .timeBox span{margin-bottom: 3px; display: block; font-size: 14px; font-weight: 500; color: #757575;}
+.commuteWrap .commuteBox .infoList li .timeBox span:last-child{margin-bottom: 0;}
+.commuteWrap .commuteBox .infoList li .timeBox img{display: block; margin: 0 auto;}
+.commuteWrap .commuteBox .infoList li .textBox{position: relative; padding: 4px 12px;}
+.commuteWrap .commuteBox .infoList li .textBox::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 2px; border-radius: 50px;}
+
+.commuteWrap .commuteBox .infoList li .textBox.border-blue::before{background-color: #107DF2;}
+.commuteWrap .commuteBox .infoList li .textBox.border-green::before{background-color: #1DD9BA;}
+.commuteWrap .commuteBox .infoList li .textBox.border-purple::before{background-color: #7610F2;}
+.commuteWrap .commuteBox .infoList li .textBox.border-brown::before{background-color: #BB6A1E;}
+
+
+
+
+.commuteWrap .commuteBox .infoList li .textBox .name{display: block; color: #231D17; font-size: 16px; font-weight: 500;}
+.commuteWrap .commuteBox .infoList li .textBox .info{display: block; font-size: 14px; font-weight: 300; color: #757575;}

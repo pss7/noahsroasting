@@ -42,6 +42,7 @@
 #footerWrap .footerLinkList li a.approval::before{top: 8px; width: 22px; height: 16px; background: url(../images/common/icon03.svg)no-repeat center;}
 #footerWrap .footerLinkList li a.approval.active::before{background: url(../images/common/approval_active.svg)no-repeat center;}
 #footerWrap .footerLinkList li a.commute::before{top: 5px; width: 19px; height: 20px; background: url(../images/common/icon04.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.commute.active::before{background: url(../images/common/commute_active.svg)no-repeat center;}
 #footerWrap .footerLinkList li a.vacation::before{top: 8px; width: 21px; height: 19px; background: url(../images/common/icon05.svg)no-repeat center;}
 #footerWrap .footerLinkList li a img{display: block; margin: 0 auto 9px;}
 #footerWrap .footerLinkList li a span{display: block; text-align: center; font-size: 10px; color: #757575;} 
