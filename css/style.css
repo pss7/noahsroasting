@@ -7,6 +7,14 @@
 .btn.btnType01{border: 1px solid #C7C7C7; color: #231D17;}
 .btn.btnType02{background-color: #63D3F5; color: #fff;}
 
+/* 공통 - 탭 */
+.comTab{display: flex; align-items: center; justify-content: center;}
+.comTab li{flex: 1;}
+.comTab li .tabBtn{display: block; width: 100%; height: 46px; font-size: 14px; color: #757575; text-align: center;  border-bottom: 1px solid #F2F2F2;}
+.comTab li.active .tabBtn{border-bottom: 2px solid #231D17; color: #231D17; font-weight: 700;}
+
+
+
 /* 가운데영역 */
 .container{padding: 0 18px;}
 
@@ -30,8 +38,9 @@
 #footerWrap .footerLinkList li a.home::before{top: 6px; width: 19px; height: 19px; background: url(../images/common/icon01.svg)no-repeat center;}
 #footerWrap .footerLinkList li a.home.active::before{top: 6px; width: 19px; height: 19px; background: url(../images/common/home_active.svg)no-repeat center;}
 #footerWrap .footerLinkList li a.email::before{top: 8px; width: 21px; height: 16px; background: url(../images/common/icon02.svg)no-repeat center;}
-#footerWrap .footerLinkList li a.email.active::before{top: 8px; width: 21px; height: 16px; background: url(../images/common/mail_active.svg)no-repeat center;}
-#footerWrap .footerLinkList li a.payment::before{top: 8px; width: 22px; height: 16px; background: url(../images/common/icon03.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.email.active::before{background: url(../images/common/mail_active.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.approval::before{top: 8px; width: 22px; height: 16px; background: url(../images/common/icon03.svg)no-repeat center;}
+#footerWrap .footerLinkList li a.approval.active::before{background: url(../images/common/approval_active.svg)no-repeat center;}
 #footerWrap .footerLinkList li a.commute::before{top: 5px; width: 19px; height: 20px; background: url(../images/common/icon04.svg)no-repeat center;}
 #footerWrap .footerLinkList li a.vacation::before{top: 8px; width: 21px; height: 19px; background: url(../images/common/icon05.svg)no-repeat center;}
 #footerWrap .footerLinkList li a img{display: block; margin: 0 auto 9px;}
