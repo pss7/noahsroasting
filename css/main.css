@@ -39,7 +39,7 @@
 .mailWrap .mailLlist li .inputMarkBox{margin: 0; padding: 0;}
 .mailWrap .mailLlist li .inputMarkBox label{display: block; width: 18px; height: 18px; background: url(../images/mail/favorite_icon.svg)no-repeat center; border: 0;}
 .mailWrap .mailLlist li .inputMarkBox input:checked + label{background: url(../images/mail/favorite_active.svg)no-repeat center;}
-.mailWrap .mailLlist li .textBox{display: flex; flex-direction: column; overflow: hidden;}
+.mailWrap .mailLlist li .textBox{width: 100%; display: flex; flex-direction: column; overflow: hidden;}
 .mailWrap .mailLlist li .textBox .box{position: relative;}
 .mailWrap .mailLlist li .textBox .box .inputMarkBox{position: absolute; top:0; right:0;}
 .mailWrap .mailLlist li .textBox h2{padding-right: 66px; position: relative; color: #231D17; font-weight: 500; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
